@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculatorMicrosoft"
         mc:Ignorable="d"
-        Title="CalculatorHello" MinWidth="403" MinHeight="450" Height="611" Width="608" Background="#ebebeb" FontSize="18" FontFamily="Myriad Pro">
+        Title="Calculator" MinWidth="403" MinHeight="450" Height="611" Width="608" Background="#ebebeb" FontSize="18" FontFamily="Myriad Pro">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition MinWidth="94" MaxWidth="294"/>
