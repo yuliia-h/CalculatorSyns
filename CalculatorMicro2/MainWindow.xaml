@@ -32,10 +32,10 @@
         <RadioButton GroupName="groupChange" x:Name="radioButtonProgrammer" Content="Programmer" Grid.Column="2" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
         <Label x:Name="labelDuplicate" Grid.ColumnSpan="4" Content="Label" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" FontSize="12" HorizontalAlignment="Right"/>
         <Label x:Name="labelMain" Grid.ColumnSpan="4" Content="Label" HorizontalAlignment="Right" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" FontSize="28"/>
-        <Button x:Name="buttonMR" Content="MR" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" />
-        <Button x:Name="buttonMemoryPlus" Content="M+" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED"/>
-        <Button x:Name="buttonMemoryMinus" Content="M-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED"/>
-        <Button x:Name="buttonMS" Content="MS" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED"/>
+        <Button x:Name="buttonMR" Content="MR" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16" />
+        <Button x:Name="buttonMemoryPlus" Content="M+" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
+        <Button x:Name="buttonMemoryMinus" Content="M-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
+        <Button x:Name="buttonMS" Content="MS" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
         <Button x:Name="buttonPercent" Content="%" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
         <Button x:Name="buttonCE" Content="CE" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
         <Button x:Name="buttonC" Content="C" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
