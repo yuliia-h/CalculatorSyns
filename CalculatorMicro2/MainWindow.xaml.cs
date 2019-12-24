@@ -24,5 +24,10 @@ namespace CalculatorMicro2
         {
             InitializeComponent();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

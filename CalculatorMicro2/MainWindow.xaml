@@ -7,59 +7,117 @@
         mc:Ignorable="d"
         Title="Calculator" MinWidth="403" MinHeight="450" Height="611" Width="608" Background="#ebebeb" FontSize="18" FontFamily="Myriad Pro">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition MinWidth="94" MaxWidth="294"/>
-            <ColumnDefinition MinWidth="94" MaxWidth="294"/>
-            <ColumnDefinition MinWidth="94" MaxWidth="294"/>
-            <ColumnDefinition MinWidth="94" MaxWidth="294"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="35"></RowDefinition>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="60"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="20"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <RadioButton GroupName="groupChange" x:Name="radioButtonStandart" Content="Standart" Grid.Column="0" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
-        <RadioButton GroupName="groupChange" x:Name="radioButtonScientific" Content="Scientific" Grid.Column="1" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
-        <RadioButton GroupName="groupChange" x:Name="radioButtonProgrammer" Content="Programmer" Grid.Column="2" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
-        <Label x:Name="labelDuplicate" Grid.ColumnSpan="4" Content="Label" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" FontSize="12" HorizontalAlignment="Right"/>
-        <Label x:Name="labelMain" Grid.ColumnSpan="4" Content="Label" HorizontalAlignment="Right" Margin="0" Grid.Row="2" VerticalAlignment="Stretch" FontSize="28"/>
-        <Button x:Name="buttonMR" Content="MR" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16" />
-        <Button x:Name="buttonMemoryPlus" Content="M+" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
-        <Button x:Name="buttonMemoryMinus" Content="M-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
-        <Button x:Name="buttonMS" Content="MS" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
-        <Button x:Name="buttonPercent" Content="%" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
-        <Button x:Name="buttonCE" Content="CE" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
-        <Button x:Name="buttonC" Content="C" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
-        <Button x:Name="buttonclear" Content="clear" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
-        <Button x:Name="button1x" Content="1/x" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonX2" Content="x2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button2korenx" Content="2korenx" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonDivide" Content="/" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button7" Content="7" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button8" Content="8" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button9" Content="9" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonMultiply" Content="x" HorizontalAlignment="Stretch" Margin="0" Grid.Row="7" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button4" Content="4" HorizontalAlignment="Stretch" Margin="0" Grid.Row="8" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button5" Content="5" HorizontalAlignment="Stretch" Margin="0" Grid.Row="8" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button6" Content="6" HorizontalAlignment="Stretch" Margin="0" Grid.Row="8" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonMinus" Content="-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="8" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button1" Content="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button2" Content="2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button3" Content="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonPlus" Content="+" HorizontalAlignment="Stretch" Margin="0" Grid.Row="9" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonPlusMinus" Content="+/-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="button0" Content="0" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonComma" Content="," HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
-        <Button x:Name="buttonEqually" Content="=" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="3" VerticalAlignment="Stretch" Background="#FF82B2DA" BorderBrush="#FFEBEBEB"/>
+
+        <Grid x:Name="gridRadio" Margin="0,0,-0.4,541.6" Visibility="Visible" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="35"></RowDefinition>
+            </Grid.RowDefinitions>
+            <RadioButton GroupName="groupChange" x:Name="radioButtonStandart1" Content="Standart" Grid.Column="0" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
+            <RadioButton GroupName="groupChange" x:Name="radioButtonScientific1" Content="Scientific" Grid.Column="1" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
+            <RadioButton GroupName="groupChange" x:Name="radioButtonProgrammer1" Content="Programmer" Grid.Column="2" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid x:Name="gridLabel" Visibility="Visible" Margin="0,40,-0.4,452.6" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition MinHeight="20"></RowDefinition>
+                <RowDefinition MinHeight="60"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label x:Name="labelDuplicate" Grid.Row="0" Content="Label" Margin="0,0,1,0.8"  VerticalAlignment="Bottom" FontSize="12" HorizontalAlignment="Right" Height="28" Width="601"/>
+            <Label x:Name="labelMain" Grid.Row="1" Content="Label" HorizontalAlignment="Right" Margin="0"  VerticalAlignment="Stretch" FontSize="28" Width="592"/>
+        </Grid>
+
+        <Grid x:Name="gridMemory" Margin="63,249,166.6,278.6" RenderTransformOrigin="0.795,0.48" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="70" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="70" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="70" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="70" MaxWidth="294"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="buttonMR" Content="MR" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16" />
+            <Button x:Name="buttonMemoryPlus" Content="M+" HorizontalAlignment="Stretch" Margin="0" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
+            <Button x:Name="buttonMemoryMinus" Content="M-" HorizontalAlignment="Stretch" Margin="0" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
+            <Button x:Name="buttonMS" Content="MS" HorizontalAlignment="Stretch" Margin="0" Grid.Column="3" VerticalAlignment="Stretch" Background="#FFEBEBEB" BorderBrush="#FFF7EDED" FontSize="16"/>
+        </Grid>
+
+        <Grid x:Name="gridStandart" Margin="106,303,151.6,166.6" RenderTransformOrigin="0.795,0.48">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="buttonPercent" Content="%" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
+            <Button x:Name="buttonCE" Content="CE" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
+            <Button x:Name="buttonC" Content="C" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
+            <Button x:Name="button1x" Content="1/x" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="buttonX2" Content="x2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button2korenx" Content="2korenx" HorizontalAlignment="Stretch" Margin="0" Grid.Row="6" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+        </Grid>
+
+        <Grid x:Name="gridNumber" Margin="0,420,153.6,4.6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="button7" Content="7" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button8" Content="8" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button9" Content="9" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+
+            <Button x:Name="button4" Content="4" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button5" Content="5" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button6" Content="6" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+
+            <Button x:Name="button1" Content="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button2" Content="2" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button3" Content="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+
+            <Button x:Name="buttonPlusMinus" Content="+/-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="0" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="button0" Content="0" HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="1" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="buttonComma" Content="," HorizontalAlignment="Stretch" Margin="0" Grid.Row="10" Grid.Column="2" VerticalAlignment="Stretch" Background="#FFFAFAFA" BorderBrush="#FFEBEBEB"/>
+
+        </Grid>
+
+        <Grid x:Name="gridOperation" Margin="455,342,68.6,10.6" RenderTransformOrigin="0.795,0.48">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="94" MaxWidth="294"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="buttonclear" Content="clear" HorizontalAlignment="Stretch" Margin="0" Grid.Row="0" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFF3ECEC"/>
+            <Button x:Name="buttonDivide" Content="/" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1"  VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="buttonMultiply" Content="x" HorizontalAlignment="Stretch" Margin="0" Grid.Row="2"  VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="buttonMinus" Content="-" HorizontalAlignment="Stretch" Margin="0" Grid.Row="3"  VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="buttonPlus" Content="+" HorizontalAlignment="Stretch" Margin="0" Grid.Row="4" VerticalAlignment="Stretch" Background="#FFF1F1F1" BorderBrush="#FFEBEBEB"/>
+            <Button x:Name="buttonEqually" Content="=" HorizontalAlignment="Stretch" Margin="0" Grid.Row="5"  VerticalAlignment="Stretch" Background="#FF82B2DA" BorderBrush="#FFEBEBEB"/>
+
+        </Grid>
+
+
 
     </Grid>
 </Window>
